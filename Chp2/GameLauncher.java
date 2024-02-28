@@ -1,37 +1,37 @@
 package Chp2;
-
-class Player{
-    int number;  // created instance variable
-    void guess(){ // no logic behind it just random stuff as per my IQ
-        int x = (int)(Math.random()*9)+1; // random number for x variable
-        System.out.println(x); // print x
-        if(number==x){ // loop explained below in gamelauncher class
-            System.out.println("Player guessed right number");
-        }
-        else{
-            System.out.println("Player did not guessed right number");
-        }
+class Player {
+    int number ;
+    int guess(){
+        number = (int)(Math.random()*9+1);
+        return number;
     }
 }
-class GameLauncher{
+class GuessGame{
+    Player p1;
+    Player p2;
+    Player p3;
+    int guess = (int)(Math.random()*9+1);
+    void startGame(){
+        System.out.println("Playing the game ");
+        p1 = new Player();
+        p2 = new Player();
+        p3 = new Player();
+        int a = p1.guess();
+        int b = p2.guess();
+        int c = p3.guess();
+        System.out.println("Player 1 guessed number : "+a);
+        System.out.println("Player 2 guessed number : "+b);
+        System.out.println("Player 3 guessed number : "+c);
+        System.out.println(guess);
+        System.out.println(a==guess);
+        System.out.println(b==guess);
+        System.out.println(c==guess);
+    }
+}
+
+public class GameLauncher {
     public static void main(String[] args) {
-        class GuessGame{
-            //as per instructions added class guessgame in gamelauncher
-            Player p1; //instance var for player
-            Player p2;
-            Player p3;
-            void startGame(){  //startgame method to start the game
-                System.out.println("Game is Started");
-                p1 = new Player(); // as per my logic new player p1
-                p2 = new Player(); // p2
-                p3 = new Player(); // p3
-                p1.guess(); // did p1 guesses number == x
-                p2.guess(); // same
-                p3.guess(); // same // if correct it will print it is correct
-                //if condition is not true in guess method it will return not correct
-            }
-        }
-        GuessGame game = new GuessGame();// this is copied one idk how it works
+        GuessGame game = new GuessGame();
         game.startGame();
     }
 }
