@@ -6,12 +6,12 @@ class Area {
     Scanner sc = new Scanner(System.in);
     int length;
     int breadth;
-    int setDim(){ //Dimensions for Rectangle
+    int setDim(){
         System.out.print("Enter length : ");
         length = sc.nextInt();
         System.out.print("Enter breadth : ");
         breadth = sc.nextInt();
-        return length + breadth; //is this good practice
+        return length + breadth;
     }
     int getArea(){
         int area = length*breadth;
