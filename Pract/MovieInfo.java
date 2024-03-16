@@ -31,6 +31,6 @@ public class MovieInfo {
             movi[x].info();
             movi[x].output();
             x+=1;
-        }
+        }// can't we gather the info in first place and then display all at once
     }
 }
