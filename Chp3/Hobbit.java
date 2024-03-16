@@ -5,7 +5,7 @@ class Hobbit {
     public static void main(String[] args) {
         Hobbit[] h = new Hobbit[3];
         int z = 0;
-        while (z < 3) {
+        while (z < 3) { // changing (z<3) here from (z<4) cuz we have only 3 instances
             //instead of z = z + 1 here
             h[z] = new Hobbit();
             h[z].name = "bilbo";
