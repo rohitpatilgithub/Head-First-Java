@@ -1,8 +1,8 @@
 package Pract;
 class increase{
     int number;
-    increase(int number){
-        this.number = number;
+    increase(int number){       // can we use     class type(parameter)
+        this.number = number;   // this.ref means
     }
     void out(){
         System.out.println(number);
