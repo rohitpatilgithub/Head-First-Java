@@ -1,7 +1,6 @@
 package Chp4;
 
 class Dog{
-    int size;
     void bark(int noofbarks){
         while(noofbarks>0){
         System.out.print("Whoff!!! ");
