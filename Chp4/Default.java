@@ -22,8 +22,8 @@ public class Default {
     public static void main(String[] args) {
         Def ok = new Def();
         int a = ok.getDef();
-        System.out.println("Integer default value : "+a);
+        System.out.println("Integer default value : "+a);// output 0
         String b = ok.getWhat();
-        System.out.println("String default value : "+b);
+        System.out.println("String default value : "+b);// output null
     }
 }
