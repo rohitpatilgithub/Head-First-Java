@@ -42,7 +42,7 @@ class Armstrong{
             System.out.println(separated[j]);
         }
     }
-    void myArmstring(){
+    void myArmstrong(){
         armstrong = 0;
         for(int i = 0;i<separated.length;i++){
             count = separated[i];
@@ -63,6 +63,6 @@ public class ArmstrongTest {
         System.out.print("Length of number is : ");ok.length();
         System.out.print("Decimals : ");ok.decimals();
         System.out.println("Separated numbers are : ");ok.newSeprateNum();
-        System.out.print("Your armstrong number is : ");ok.myArmstring();
+        System.out.print("Your armstrong number is : ");ok.myArmstrong();
     }
 }
