@@ -1,27 +1,27 @@
 package Chp2;
 
-class Echo{
+class Echo {
     int count = 0;
-    void hello(){
+    void hello() {
         System.out.println("hellooo...");
     }
 }
 public class Puzzle {
     public static void main(String[] args) {
         Echo e1 = new Echo();
-        Echo e2 = new Echo();
+        Echo e2 = e1;
         int x = 0;
-        while(x<4){
+        while( x < 4 ) {
             e1.hello();
-            e1.count = e1.count+1;
-            if(x>0){
-                e2.count = e2.count+1;
+            e1.count = e1.count + 1 ;
+            if( x < 1 ) {
+                e2.count = e2.count + 1 ;
             }
-            if(x>1){
-                e2.count = e2.count + e1.count;
+            if( x == 3 ) {
+                e2.count = e2.count + e1.count ;
             }
-            x = x + 1;
+            x = x + 1 ;
         }
-        System.out.println(e2.count); // for 24 instead 10
+        System.out.println( e2.count );
     }
 }
