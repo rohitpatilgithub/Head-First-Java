@@ -14,12 +14,11 @@ public class TestArrays {
         island[3] = "Cozumel";
         int y = 0;
         int ref;
-        //ref = index[y]; --->HERE<---
-        while(y<4){
-            ref = index[y];// why it doesn't update when it put outside while loop
-            System.out.print("island = ");
+        while(y < 4){
+            ref = index[y];
+            System.out.print(" island = ");
             System.out.println(island[ref]);
-            y = y+1;
+            y = y + 1;
         }
     }
 }

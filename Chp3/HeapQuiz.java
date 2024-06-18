@@ -17,9 +17,9 @@ public class HeapQuiz {
         hq[0] = hq[3];
         hq[3] = hq[2];
         hq[2] = hq[0];
-//        System.out.println("hq[0] = "+hq[0].id); --> here value is null
+        System.out.println("hq[0] = "+hq[0]);//it prints here
         System.out.println("hq[1] = "+hq[1].id);
-//        System.out.println("hq[2] = "+hq[2].id); --> here value is null
+        //System.out.println("hq[2] = "+hq[2].id); why does not it print null (it should pass the value like pass by value)
         System.out.println("hq[3] = "+hq[3].id);
         System.out.println("hq[4] = "+hq[4].id);
     }
