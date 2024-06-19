@@ -8,26 +8,26 @@ public class Puzzle4 {
         while(i<6){
             value[i] = new Value();
             value[i].intValue = number;
-            number = number*10;
-            i = i+1;
+            number = number * 10;
+            i = i + 1;
         }
         int result = 0;
         i = 6;
-        while (i>0){
-            i = i-1;
+        while (i > 0){
+            i = i - 1;
             result = result+value[i].doStuff(i);
         }
-        System.out.println("result "+result);
+        System.out.println("result " + result);
     }
 }
 class Value{
     int intValue;
     public int doStuff(int factor){
         if(intValue>100){
-            return intValue*(factor);
+            return intValue * (factor);
         }
         else {
-            return intValue*(5-factor);
+            return intValue * (5-factor);
         }
     }
 }
