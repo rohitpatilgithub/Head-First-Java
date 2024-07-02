@@ -29,6 +29,9 @@ class Startup{
                         System.out.println("Hit");
                         numOfHits++;
                     }
+//                    else {                    // This does not work as expected please check
+//                        System.out.println("Miss");
+//                    }
                 }
             }
         }
