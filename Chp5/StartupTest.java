@@ -6,6 +6,7 @@ import java.util.Scanner;
 class Startup{
     int [] locationCells = new int[7];          // location of Startup cells
     int numOfHits = 0;                          // how many hits ?
+    int guess;
     void setupLocations(){
         Random ok = new Random();
         int a = ok.nextInt(5);          // it generates random number
@@ -37,9 +38,11 @@ class Startup{
             else {
                 System.out.println(result);
             }
+            guess++;                                // every guess you take , it updates itself
         }
         result = "Kill";
         System.out.println(result);
+        System.out.println("Your took "+guess+" guesses.");
     }
 }
 public class StartupTest {
